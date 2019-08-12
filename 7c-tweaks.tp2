@@ -1,0 +1,10 @@
+BACKUP "weidu_external/backup/7c-tweaks"
+AUTHOR CrevsDaak
+VERSION alpha
+
+BEGIN "Use vanilla BG2 Cloudkill graphics" DESIGNATED 100
+GROUP ~Visual tweaks~
+REQUIRE_PREDICATE MOD_IS_INSTALLED 1pp.tp2 114 || GAME_IS ~bgee bg2ee eet~ "This component is useless if 1pp graphics are not present"
+
+COPY "7c-tweaks/bam/sphorpuf.bam" override
+
